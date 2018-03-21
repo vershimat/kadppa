@@ -379,3 +379,8 @@ html, body {
   }
 }
 
+.bb {
+  border-bottom: 1px solid #1f375b;
+  width: 45%; 
+  margin: 1rem;
+}
