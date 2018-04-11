@@ -384,3 +384,8 @@ html, body {
   width: 45%; 
   margin: 1rem;
 }
+@media only screen and (min-device-width: 600px) {
+  .off {
+    display: none;
+  }
+}
