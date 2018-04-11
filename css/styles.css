@@ -388,4 +388,7 @@ html, body {
   .off {
     display: none;
   }
+  .almost{
+    width: 85%;
+  }
 }
