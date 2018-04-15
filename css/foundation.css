@@ -3320,9 +3320,9 @@ table {
     padding: 0.5rem 0.625rem 0.625rem; }
   table tbody tr:nth-child(even) {
     border-bottom: 0;
-    background-color: #f1f1f1; }
+    background-color: transparent; }
   table.unstriped tbody {
-    background-color: #fefefe; }
+    background-color: transparent; }
     table.unstriped tbody tr {
       border-bottom: 0;
       border-bottom: 1px solid #f1f1f1;

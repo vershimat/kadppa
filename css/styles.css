@@ -12,6 +12,9 @@ html, body {
 .trans-back {
   background-clip: transparent;
 }
+tbody>td.trans-back {
+  background-clip: transparent;
+}
 .flip-card {
     -webkit-perspective: 1000;
             perspective: 1000;
