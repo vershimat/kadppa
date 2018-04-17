@@ -5,6 +5,7 @@ html, body {
 }
 .pallette1{
   background-color: #ff3389;
+  color: #ff3389;
 }
 .pallette2 {
   background-color: #cee1f9;
@@ -294,7 +295,9 @@ tbody>td.trans-back {
     padding-bottom: 0.5rem;
     border-bottom: 0.5px solid #1f375b;
   }
-  
+  .fun-text, div p, div {
+    color:#1f375b;
+  }
 .marketing-site-footer {
   background: #2c3840;
   color: #8aa0ae;
