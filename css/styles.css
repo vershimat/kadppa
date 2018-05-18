@@ -295,9 +295,9 @@ tbody>td.trans-back {
     padding-bottom: 0.5rem;
     border-bottom: 0.5px solid #1f375b;
   }
-  .fun-text, div p, div {
+  /* .fun-text div p, div {
     color:#1f375b;
-  }
+  } */
 .marketing-site-footer {
   background: #2c3840;
   color: #8aa0ae;
@@ -397,4 +397,9 @@ tbody>td.trans-back {
   .almost{
     width: 85%;
   }
+}
+.pic-card {
+  background-color: transparent;
+  /* cursor: pointer; */
+  padding: 0;
 }
