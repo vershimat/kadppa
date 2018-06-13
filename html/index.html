@@ -81,10 +81,10 @@
           <a href="#0">Download Dataset</a>
           <ul class="submenu menu vertical" data-submenu>
             <li>
-              <a href="#0">CSV</a>
+              <a href="#0"  data-open="dataset">CSV</a>
             </li>
             <li>
-              <a href="#0">JSON</a>
+              <a href="#0" data-open="dataset">JSON</a>
             </li>
 
           </ul>
@@ -243,10 +243,16 @@
       <hr>
       <div class="grid-x grid-margin-x">
         <div class="cell small-12 medium-12 large-3">
+            <div class="callout" style="background-color: transparent; color: #ff3389">
+                Please note that you can select more than one filter parameter by ticking the checkbox or selecting an item from the dropdown search
+              </div>
           <div class="callout" style="background-color: transparent">
             <ul class="vertical menu" data-accordion-menu>
               <li class="under">
-                <a href="#0"> Filter by Procurement Category</a>
+                <a href="#0" data-toggle="note-cat"> Filter by Procurement Category</a>
+                <div class="dropdown-pane" id="note-cat" data-dropdown data-hover="true" data-hover-pane="true">
+                    You can select multiple categories for your filter by ticking the checkbox next to the Category or category
+                  </div>
                 <ul class="menu vertical nested is-active">
                   <li>
                     <input id="checkbox12" type="checkbox">
@@ -267,7 +273,10 @@
                 </ul>
               </li>
               <li class="under">
-                <a href="#0"> Filter by Year</a>
+                <a href="#0" data-toggle="note-year" > Filter by Year</a>
+                <div class="dropdown-pane" id="note-year" data-dropdown data-hover="true" data-hover-pane="true">
+                    You can select multiple years for your filter by ticking the checkbox next to the year or years
+                  </div>
                 <ul class="menu vertical nested">
                   <li>
                     <input id="checkbox12" type="checkbox">
@@ -288,7 +297,10 @@
                 </ul>
               </li>
               <li class="under">
-                <a href="#0"> Filter by Ministries, Departments and Angencies</a>
+                <a href="#0" data-toggle="note-mda"> Filter by Ministries, Departments and Angencies</a>
+                <div class="dropdown-pane" id="note-mda" data-dropdown data-hover="true" data-hover-pane="true">
+                    You can select multiple MDAS by searching the title and selecting. You can also remove a selected item.
+                  </div>
                 <ul class="menu vertical nested">
                   <li>
                     <input id="checkbox12" type="checkbox">
@@ -305,7 +317,32 @@
                   <!-- <li>  <input id="checkbox12" type="checkbox"><label for="checkbox12">2018</label></li> -->
                 </ul>
               </li>
+              <li class="" style="margin: 1rem">
+                <a href="#" class="button button-like" data-open="dataset">
+                  
+                  Download Dataset (CSV)
+              </a>
+              </li>
+              <li class="" style="margin: 1rem">
+                <a href="#" class="button button-like" data-open="dataset">
+                  
+                  Download Dataset (JSON)
+              </a>
+              </li>
             </ul>
+          </div>
+
+
+          <div class=" small reveal" id="dataset" data-reveal>
+            
+            
+            <div class="stat text-center">Do you want to download the complete dataset or your filter results?</div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <hr>
+            <button class="button">Filter Results</button>
+            <button class="button pull-right">Entire Dataset</button>
           </div>
           <!-- 
           <div class="cell">
