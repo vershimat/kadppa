@@ -168,9 +168,10 @@ tbody>td.trans-back {
     padding-bottom: 0.5rem;
     border-bottom: 0.5px solid #1f375b;
   }
-  /* .fun-text div p, div {
-    color:#1f375b;
-  } */
+   div.highlight{
+    color: #ff3389;
+    font-weight: 400;
+  } 
 .marketing-site-footer {
   background: #2c3840;
   color: #8aa0ae;
@@ -265,16 +266,184 @@ tbody>td.trans-back {
   width: 45%; 
   margin: 1rem;
 }
-@media only screen and (min-device-width: 600px) {
-  .off {
-    display: none;
-  }
-  .almost{
-    width: 85%;
-  }
-}
+
 .pic-card {
   background-color: transparent;
   /* cursor: pointer; */
   padding: 0;
 }
+
+.orbit {
+  position: relative;
+ }
+
+.orbit-container {
+  position: relative;
+  
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+ }
+
+.orbit-slide {
+  width: 100%;
+  /* height: 600px; */
+  
+ }
+  .orbit-slide.no-motionui.is-active {
+    top: 0;
+    left: 0; }
+
+.orbit-figure {
+  margin: 0; }
+
+.orbit-image {
+
+  max-width: 100%;
+  margin: 0; } 
+
+.orbit-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 1rem;
+  background-color: rgba(10, 10, 10, 0.5);
+  color: #fefefe; }
+
+.orbit-previous, .orbit-next {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  z-index: 10;
+  padding: 1rem;
+  color: #fefefe; }
+  [data-whatinput='mouse'] .orbit-previous, [data-whatinput='mouse'] .orbit-next {
+    outline: 0; }
+  .orbit-previous:hover, .orbit-next:hover, .orbit-previous:active, .orbit-next:active, .orbit-previous:focus, .orbit-next:focus {
+    background-color: rgba(10, 10, 10, 0.5); }
+
+.orbit-previous {
+  left: 0; }
+
+.orbit-next {
+  left: auto;
+  right: 0; }
+
+.orbit-bullets {
+  position: relative;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  text-align: center; }
+  [data-whatinput='mouse'] .orbit-bullets {
+    outline: 0; }
+  .orbit-bullets button {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0.1rem;
+    border-radius: 50%;
+    background-color: #cacaca; }
+    .orbit-bullets button:hover {
+      background-color: #8a8a8a; }
+    .orbit-bullets button.is-active {
+      background-color: #8a8a8a; }
+      @media only screen and (min-device-width: 600px) {
+        .off {
+          display: none;
+        }
+        .almost{
+          width: 85%;
+        }
+      }
+
+      
+.progress-indicator {
+  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: table;
+  table-layout: fixed;
+}
+
+.progress-indicator > li {
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.progress-indicator > li span {
+  position: absolute;
+  color: #e6e6e6;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.05px;
+  text-transform: uppercase;
+}
+
+.progress-indicator > li::before {
+  content: attr(data-step);
+  display: block;
+  margin: 0 auto;
+  background: #e6e6e6;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  margin-bottom: 0.25em;
+  line-height: 1.5em;
+  border-radius: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+.progress-indicator > li::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #e6e6e6;
+  width: 100%;
+  height: 0.15em;
+  top: 50%;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  left: 50%;
+  margin-left: 1.5em\9;
+  z-index: 0;
+}
+
+.progress-indicator > li:last-child:after {
+  display: none;
+}
+
+.progress-indicator > li.is-complete {
+  color: #1779ba;
+}
+
+.progress-indicator > li.is-complete::before, .progress-indicator > li.is-complete::after {
+  color: #fefefe;
+  background: #1779ba;
+}
+
+.progress-indicator > li.is-complete span {
+  color: #1779ba;
+}
+
+.progress-indicator > li.is-current {
+  color: #4eabe9;
+}
+
+.progress-indicator > li.is-current::before {
+  color: #fefefe;
+  background: #4eabe9;
+}
+
+.progress-indicator > li.is-current span {
+  color: #4eabe9;
+}
+

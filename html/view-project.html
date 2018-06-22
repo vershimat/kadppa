@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
@@ -138,42 +139,50 @@
     <div class="grid-x grid-margin-y grid-margin-x" style="margin: 5% 5%">
         <div class="cell small-12 medium-3 large-3">
 
-            <div class="show-for-medium">
-                <ul class="vertical tabs" data-tabs id="stages2" style="border: none; background-color: transparent">
-                    <li class="tabs-title">
-                        <a href="#planning" class="button button-like">
-                            <i class="far fa-calendar-alt"></i>
-                            <span class="hide-for-small-only">Planning</span>
-                        </a>
-                    </li>
-                    <li class="tabs-title">
-                        <a href="#tender" class="button button-like">
-                            <i class="fas fa-users"></i>
-                            <span class="hide-for-small-only">Tender (initiation)</span>
-                        </a>
-                    </li>
-                    <li class="tabs-title">
-                        <a href="#award" class="button button-like">
-                            <i class="fas fa-trophy"></i>
-                            <span class="hide-for-small-only">Award</span>
-                        </a>
-                    </li>
-                    <li class="tabs-title">
-                        <a href="#contract" class="button button-like">
-                            <i class="far fa-file-alt"></i>
-                            <span class="hide-for-small-only">Contract</span>
-                        </a>
-                    </li>
-                    <li class="tabs-title">
-                        <a href="#implementation" class="button button-like">
-                            <i class="fas fa-cogs"></i>
-                            <span class="hide-for-small-only">Implementation</span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="show-for-medium" data-sticky-container>
+                <div class="" data-sticky data-top-anchor="stop-top: top" data-btm-anchor="footer: top">
+                    <ul class="vertical tabs" style="border: none; background-color: transparent">
+                        <li class="tabs-title">
+                            <a href="#planning" class="button button-like">
+                                <i class="far fa-calendar-alt"></i>
+                                <span class="hide-for-small-only">Planning</span>
+                            </a>
+                        </li>
+                        <li class="tabs-title">
+                            <a href="#tender" class="button button-like">
+                                <i class="fas fa-users"></i>
+                                <span class="hide-for-small-only">Tender (initiation)</span>
+                            </a>
+                        </li>
+                        <li class="tabs-title">
+                            <a href="#award" class="button button-like">
+                                <i class="fas fa-trophy"></i>
+                                <span class="hide-for-small-only">Award</span>
+                            </a>
+                        </li>
+                        <li class="tabs-title">
+                            <a href="#contract" class="button button-like">
+                                <i class="far fa-file-alt"></i>
+                                <span class="hide-for-small-only">Contract</span>
+                            </a>
+                        </li>
+                        <li class="tabs-title">
+                            <a href="#implementation" class="button button-like">
+                                <i class="fas fa-cogs"></i>
+                                <span class="hide-for-small-only">Implementation</span>
+                            </a>
+                        </li>
+                        <li class="tabs-title">
+                            <a href="#comment" data-open="write-comment" class="button button-like">
+                                <i class="far fa-comment-alt"></i>
+                                <span class="hide-for-small-only">Comment</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="show-for-small-only">
-                <ul class="tabs" data-tabs id="stages2" style="border: none; background-color: transparent">
+                <ul class="tabs" style="border: none; background-color: transparent">
                     <li class="tabs-title">
                         <a href="#planning" class="button button-like">
                             <i class="far fa-calendar-alt"></i>
@@ -202,19 +211,25 @@
                         <a href="#implementation" class="button button-like">
                             <i class="fas fa-cogs"></i>
                             <span class="hide-for-small-only">Implementation</span>
+                        </a>
+                    </li>
+                    <li class="tabs-title">
+                        <a href="#comment" data-open="write-comment" class="button button-like">
+                            <i class="far fa-comment-alt"></i>
+                            <span class="hide-for-small-only">Comment</span>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="cell small-12 medium-9 large-9">
-            <div class="tabs-content" data-tabs-content="stages2" style="border: none; background-color: transparent">
-                <div class="tabs-panel" id="planning" style="background-color: transparent">
+        <div class="cell small-12 medium-9 large-9" id="stop-top">
+            <div class="" style="border: none; background-color: transparent">
+                <div class="" id="planning" style="background-color: transparent">
                     <div class="callout secondary">
                         <div class="" style="text-align: center">
                             <i class="far fa-calendar-alt"></i> Planning </div>
                     </div>
-                    <div class="callout pallette1">
+                    <div class="callout">
                         <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fluid small-up-1 medium-up-2 large-up-2" data-equalizer data-equalize-on="medium">
                             <div class="cell primary">
                                 <p>Budget Source:</p>
@@ -229,11 +244,8 @@
                     </div>
 
                 </div>
-                <!-- <div class="tabs-panel" id="planning">
-                    <p>planning</p>
-                    <img class="thumbnail" src="assets/img/generic/rectangle-7.jpg">
-                </div> -->
-                <div class="tabs-panel" id="tender">
+
+                <div class="" id="tender">
                     <div class="callout primary">
                         <div class="" style="text-align: center">
                             <i class="fas fa-users"></i> Tender </div>
@@ -256,7 +268,7 @@
                         </div>
                     </div>
                     <div class="callout">
-                        <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fluid small-up-1 medium-up-2 large-up-2" data-equalizer data-equalize-on="medium">
+                        <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fluid small-up-1 medium-up-3 large-up-3" data-equalizer data-equalize-on="medium">
                             <div class="cell">
                                 <p>Award Citeria:</p>
                                 <div class="stat">Quality & Cost Only
@@ -264,8 +276,13 @@
                                 </div>
                             </div>
                             <div class="cell">
-                                <p>Tender Period:</p>
-                                <div class="stat">1st May, 2017 - 15th May, 2017
+                                <p>Tender Start Date:</p>
+                                <div class="stat">1st May, 2017
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <p>Tender End Date:</p>
+                                <div class="stat">15th May, 2017
                                 </div>
                             </div>
                         </div>
@@ -311,7 +328,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tabs-panel" id="award">
+                <div class="" id="award">
                     <div class="callout primary">
                         <div class="" style="text-align: center">
                             <i class="fas fa-trophy"></i> Award </div>
@@ -388,7 +405,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="tabs-panel" id="contract">
+                <div class="" id="contract">
                     <div class="callout secondary">
                         <div class="" style="text-align: center">
                             <i class="far fa-file-alt"></i> Contract </div>
@@ -409,30 +426,35 @@
                         </div>
                     </div>
                     <div class="callout">
-                        <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fluid small-up-1 medium-up-2 large-up-2" data-equalizer data-equalize-on="medium">
+                        <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fluid small-up-1 medium-up-2 large-up-3" data-equalizer data-equalize-on="medium">
                             <div class="cell">
                                 <p>Contract Amount:</p>
                                 <div class="stat">&#8358; 186, 894, 994.00
                                 </div>
                             </div>
                             <div class="cell">
-                                <p>Contract Perioid</p>
-                                <div class="stat">3/14/2017 - 31/04/2017
+                                <p>Contract Start Date</p>
+                                <div class="stat">3/14/2017
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <p>Contract End Date</p>
+                                <div class="stat">31/04/2017
                                 </div>
                             </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="tabs-panel" id="implementation">
+                <div class="" id="implementation">
                     <div class="callout primary">
                         <div class="" style="text-align: center">
                             <i class="fas fa-cogs"></i> Implementation </div>
                     </div>
                     <div class="callout">
-                        <p>Transactions</p>
-                        <!-- <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fluid small-up-1 medium-up-1 large-up-1" data-equalizer data-equalize-on="medium">
-                            <div class="cell">
+                        <p>Funding</p>
+                        <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fluid small-up-1 medium-up-1 large-up-1" data-equalizer data-equalize-on="medium">
+                            <div class="cell table-scroll">
                                 <table>
                                     <thead>
                                         <tr>
@@ -468,73 +490,138 @@
                                     </tfoot>
                                 </table>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                     <div class="callout">
-                        <p>Status Report</p>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                            Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor
-                            at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,
-                            from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
-                            discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
-                            Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
-                            book is a treatise on the theory of ethics, very popular during the Renaissance. The first line
-                            of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                    </div>
-                    <div class="callout">
-                        <p>Images</p>
-                        <div class="grid-x grid-padding-x small-up-1 medium-up-2 large-up-3" data-equalizer data-equalize-on="medium">
-                            <div class="cell">
-                                <!-- image has no padding -->
-                                <div class="card" data-equalizer-watch style="width: 100%; cursor: pointer;" data-open="slide1">
-                                    <img src="../images/slide1.jpg">
-                                    <div class="card-divider">
-                                        <p>Image Caption</p>
-                                    </div>
-                                </div>
+                        <div class="grid-x grid-padding-x grid-padding-y grid-margin-x grid-margin-y">
+                            <div class="cell small-6 medium-6 large-6">
+                                <p class="text-right">Status:</p>
                             </div>
-                            <div class="cell">
-                                <!-- image has no padding -->
-                                <div class="card" data-equalizer-watch style="width: 100%; cursor: pointer;" data-open="slide2">
-                                    <img src="../images/slide2.jpg">
-                                    <div class="card-divider">
-                                        <p>Image Caption</p>
-                                    </div>
-                                </div>
+                            <div class="cell small-6 medium-6 large-6">
+                                <div class="stat highlight">90% Completed</div>
                             </div>
 
-                            <div class="cell">
-                                <!-- image has no padding -->
-                                <div class="card" data-equalizer-watch style="width: 100%; cursor: pointer;" data-open="slide1">
-                                    <img src="../images/slide1.jpg">
-                                    <div class="card-divider">
-                                        <p>Image Caption</p>
-                                    </div>
-                                </div>
+
+                            <div class="cell small-12 medium-12 large-12">
+                                <ol class="progress-indicator">
+                                    <li class="is-complete">
+                                        <span>Stage 1</span>
+                                    </li>
+                                    <li class="is-complete">
+                                        <span>Stage 2</span>
+                                    </li>
+                                    <li class="is-current">
+                                        <span>Stage 3</span>
+                                    </li>
+                                    <li class="" data-step="">
+                                        <span>Stage 4</span>
+                                    </li>
+                                </ol>
                             </div>
                         </div>
-
-                        <div class="reveal large" id="slide1" data-reveal style="padding: 0; background-color: transparent">
-                            <img src="../images/slide1.jpg" alt="" />
-                            <button class="close-button" data-close aria-label="Close modal" type="button">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="reveal large" id="slide2" data-reveal style="padding: 0; background-color: transparent">
-                            <img src="../images/slide2.jpg" alt="" />
-                            <button class="close-button" data-close aria-label="Close modal" type="button">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-
                     </div>
                 </div>
-            </div>
+                <div class="callout">
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                        Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor
+                        at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,
+                        from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                        the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum
+                        et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise
+                        on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem
+                        ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+                <div class="callout">
+                    <p>Images</p>
+                    <div class="grid-x grid-padding-x small-up-1 medium-up-2 large-up-3" data-equalizer data-equalize-on="medium">
+                        <div class="cell">
+                            <!-- image has no padding -->
+                            <div class="card" data-equalizer-watch style="width: 100%; cursor: pointer;" data-open="slide1">
+                                <img src="../images/slide1.jpg">
+                                <div class="card-divider">
+                                    <p>Image Caption</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <!-- image has no padding -->
+                            <div class="card" data-equalizer-watch style="width: 100%; cursor: pointer;" data-open="slide2">
+                                <img src="../images/slide2.jpg">
+                                <div class="card-divider">
+                                    <p>Image Caption</p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="cell">
+                            <!-- image has no padding -->
+                            <div class="card" data-equalizer-watch style="width: 100%; cursor: pointer;" data-open="slide1">
+                                <img src="../images/slide1.jpg">
+                                <div class="card-divider">
+                                    <p>Image Caption</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal large" id="slide1" data-reveal style="padding: 0; background-color: transparent">
+                        <img src="../images/slide1.jpg" alt="" />
+                        <button class="close-button" data-close aria-label="Close modal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="reveal large" id="slide2" data-reveal style="padding: 0; background-color: transparent">
+                        <img src="../images/slide2.jpg" alt="" />
+                        <button class="close-button" data-close aria-label="Close modal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
     </div>
     </div>
-    <footer class="marketing-site-footer">
+    </div>
+    <div class=" large reveal fun-text" id="write-comment" style="color:#1f375b;" data-reveal>
+
+        <h4 style="text-align: center">Medical Gas Piping to ICU at BDTH</h4>
+        <hr>
+        <div class="cell">
+            <form>
+                <div class="grid-x grid-padding-x">
+                    <div class="medium-12 cell">
+                        <div class="stat text-center">
+                            Give us feedback on this project
+                        </div>
+                    </div>
+                    <div class="medium-12 cell">
+                        <label>Name:
+                            <input type="text" placeholder="First name and Last Name">
+                        </label>
+                    </div>
+                    <div class="medium-12 cell">
+                        <label>Email Address:
+                            <input type="text" placeholder="Type in your email address">
+                        </label>
+                    </div>
+                    <div class="medium-12 cell">
+                        <label>Questions/Concerns/Comments:
+                            <textarea placeholder="None"></textarea>
+                        </label>
+                    </div>
+                    <div class="medium-12 cell">
+                        <a href="" class="button button-like" data-close>Send</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <footer class="marketing-site-footer" id="footer">
         <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-2">
             <div class="cell">
                 <h4 class="marketing-site-footer-name">Yeti Snowcone</h4>
