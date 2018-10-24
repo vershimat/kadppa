@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -106,462 +108,539 @@
 
   <!-- This demo uses flex grid but you can use float grid too -->
 
-  <div class="cell">
-    <div class="row">
-      <div class="columns">
-        <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
-          <ul class="orbit-container">
-            <button class="orbit-previous" aria-label="previous" style="color: #ff3389;">
-              <span class="show-for-sr">Previous Slide</span>&#9664;</button>
-            <button class="orbit-next" aria-label="next" style="color: #ff3389;">
-              <span class="show-for-sr">Next Slide</span>&#9654;</button>
 
-            <li class="is-active orbit-slide">
-              <img class="orbit-image" src="../images/slide/10.png" alt="Kaduna state Open contracting portal">
-              <!-- <figcaption class="orbit-caption">Space, the final frontier.</figcaption> -->
-            </li>
-            <li class="orbit-slide">
-              <img class="orbit-image" src="../images/slide/11.png" alt="Space">
-              <!-- <figcaption class="orbit-caption">Lets Rocket!</figcaption> -->
-            </li>
-            <li class="orbit-slide">
-              <img class="orbit-image" src="../images/slide/12.png" alt="Space">
-              <!-- <figcaption class="orbit-caption">Encapsulating</figcaption> -->
-            </li>
-            <li class="orbit-slide">
-              <img class="orbit-image" src="../images/slide/13.png" alt="Space">
-              <!-- <figcaption class="orbit-caption">Outta This World</figcaption> -->
-            </li>
-            <li class="orbit-slide">
-              <img class="orbit-image" src="../images/slide/14.png" alt="Space">
-              <!-- <figcaption class="orbit-caption">Outta This World</figcaption> -->
-            </li>
+  <div class="fullscreen-image-slider">
+    <div class="orbit" role="region" aria-label="FullScreen Pictures" data-orbit>
+      <ul class="orbit-container">
 
+        <li class="is-active orbit-slide">
+          <img class="orbit-image" src="../images/slide/10.png" alt="Kaduna state Open contracting portal">
 
-            <li class="orbit-slide">
-              <img class="orbit-image" src="../images/slide/18.png" alt="Space">
-              <!-- <figcaption class="orbit-caption">Outta This World</figcaption> -->
-            </li>
-            <li class="orbit-slide">
-              <img class="orbit-image" src="../images/slide/17.png" alt="leg">
-              <!-- <figcaption class="orbit-caption">Outta This World</figcaption> -->
-            </li>
-            <li class="orbit-slide">
-              <div>
-                <img class="orbit-image" src="../images/sumviz.png" alt="Summary chart">
-              </div>
+        </li>
+        <li class="is-active orbit-slide">
+          <img class="orbit-image" src="../images/slide/11.png" alt="Space">
 
-            </li>
-            <li class="orbit-slide">
-              <img class="orbit-image" src="../images/slide/15.png" alt="Space">
-              <!-- <figcaption class="orbit-caption">Outta This World</figcaption> -->
-            </li>
+        </li>
+        <li class="is-active orbit-slide">
+          <img class="orbit-image" src="../images/slide/12.png" alt="Space">
 
-            <!-- </ul>
-          <nav class="orbit-bullets">
-            <button class="is-active" data-slide="0">
-              <span class="show-for-sr">First slide details.</span>
-              <span class="show-for-sr">Current Slide</span>
-            </button>
-            <button data-slide="1">
-              <span class="show-for-sr">Second slide details.</span>
-            </button>
-            <button data-slide="2">
-              <span class="show-for-sr">Third slide details.</span>
-            </button>
-            <button data-slide="3">
-              <span class="show-for-sr">Fourth slide details.</span>
-            </button>
+        </li>
+        <li class="is-active orbit-slide">
+          <img class="orbit-image" src="../images/slide/13.png" alt="Space">
 
-            <button data-slide="4">
-              <span class="show-for-sr">Fifth slide details.</span>
-            </button>
-            <button data-slide="5">
-              <span class="show-for-sr">Sixth slide details.</span>
-            </button>
-            <button data-slide="6">
-              <span class="show-for-sr">Seventh slide details.</span>
-            </button>
-            <button data-slide="7">
-              <span class="show-for-sr">Eighth slide details.</span>
-            </button>
-          </nav> -->
-        </div>
-      </div>
+        </li>
+        <li class="is-active orbit-slide">
+          <img class="orbit-image" src="../images/slide/14.png" alt="Space">
+
+        </li>
+
+        <li class="is-active orbit-slide">
+          <img class="orbit-image" src="../images/slide/17.png" alt="leg">
+
+        </li>
+        
+        <li class="orbit-slide">
+          <img class="orbit-image" src="../images/slide/15.png" alt="Space">
+
+        </li>
+      </ul>
     </div>
   </div>
 
 
-  <div class="cell">
-    <div class="">
-      <div class="stat text-center">
-        Summary of Dataset
-      </div>
-      <div id="summaries" data-toggler data-animate="hinge-in-from-top fade-out">
-        <div class="grid-x grid-padding-x grid-margin-x fluid small-up-1 medium-up-3 large-up-4" data-equalizer data-equalize-on="medium"
-          style="margin: 2% 2%">
-          <div class="cell">
-            <div class="card" data-equalizer-watch>
-              <div class="card-divider pallette2">
-                <h6 style="text-align: center">Total number of projects</h6>
-              </div>
-              <div class="card-section">
-                <div class="stat" style="text-align: center">22</div>
-              </div>
-              <!-- <img src="assets/img/generic/rectangle-1.jpg"> -->
-            </div>
-          </div>
-          <div class="cell">
-            <div class="card" data-equalizer-watch>
-              <div class="card-divider pallette2">
-                <h6>Total sum of projects</h6>
-              </div>
-              <div class="card-section">
-                <div class="stat" style="text-align: center">&#8358; 500, 000, 000.00</div>
-              </div>
-              <!-- <img src="assets/img/generic/rectangle-1.jpg"> -->
 
-            </div>
-          </div>
-          <div class="cell">
-            <div class="card" data-equalizer-watch>
-              <div class="card-divider pallette2">
-                <h6>The highest sum</h6>
-              </div>
-              <div class="card-section">
-                <div class="stat" style="text-align: center">&#8358; 60, 000, 000.00</div>
-              </div>
-              <!-- <img src="assets/img/generic/rectangle-1.jpg"> -->
+  <div class="back-cover" style="padding: 1rem">
 
-            </div>
-          </div>
-          <div class="cell">
-            <div class="card" data-equalizer-watch>
-              <div class="card-divider pallette2">
-                <h6>The lowest sum</h6>
-              </div>
-              <div class="card-section">
-                <div class="stat" h4 style="text-align: center">&#8358; 500, 000.00</div>
-              </div>
-              <!-- <img src="assets/img/generic/rectangle-1.jpg"> -->
+    <div id="summaries" data-toggler data-animate="hinge-in-from-top fade-out">
+      <div class="grid-x grid-padding-x grid-margin-x fluid small-up-1 medium-up-2 large-up-2">
+        <div class="cell">
+          <div class="">
+            <div class="grid-x grid-margin-x grid-margin-y small-up-1 medium-up-1 large-up-1" data-equalizer data-equalize-on="medium">
+                <div class="cell">
+                    <!-- with icon font (fontawesome) -->
+                    <div class="blogpost-footer-actions">
+                      Filter Projects
+                    </div>
+    
+    
+                  </div>
+              <div class="cell margin-top">
 
+
+                <div class="blogpost-footer-author" style="width: 100%">
+                  <img class="avatar" src="../images/file.png" alt="Sectors" / style="margin-right: 0.5rem">
+
+                  <select id='sector' name="sector" multiple style="width:100%">
+                    <option value='Health'>Health</option>
+                    <option value='Construction'>Construction</option>
+                    <option value='Education'>Education</option>
+                    <option value='Finance'>Finance</option>
+                    <option value='Social Development'>Social Development</option>
+                    <option value='Telecommunications'>Telecommunications</option>
+                    <option value='Agriculture'>Agriculture</option>
+                    <option value='Environment'>Environment</option>
+                    <option value='Justice'>Justice</option>
+                    <option value=''></option>
+                  </select>
+                </div>
+
+
+              </div>
+              <div class="cell ">
+
+
+                <div class="blogpost-footer-author" style="width: 100%">
+                  <img class="avatar" src="../images/company.png" alt="MDA" / style="margin-right: 0.5rem">
+                  <select id='mda' name="mda" multiple style="width:100%">
+                    <option value="18">Barau Dikko Teaching Hospital
+                    </option>
+                    <option value="9">College Of Education</option>
+                    <option value="22">Kaduna State College of Nursing and Midwifery, Kafanchan</option>
+                    <option value="10">Kaduna State Media Corporation</option>
+                    <option value="12">Ministry of Agriculture</option>
+                    <option value="7">Ministry of Education</option>
+                    <option value="13">Ministry of Environment and Natural Resources</option>
+                    <option value="4">Ministry of Finance</option>
+                    <option value="1">Ministry of Health & Human Services</option>
+                    <option value="15">Ministry of Information and Home Affairs</option>
+                    <option value="19">Ministry of Justice</option>
+                    <option value="11">Ministry of Science and Technology</option>
+                    <option value="16">Ministry of Water Resources</option>
+                    <option value="6">Ministry of Women Affairs</option>
+                    <option value="2">Ministry of Works Housing and Transport</option>
+                    <option value="8">Ministry of Youth and Sport</option>
+                    <option value="5">Ministry of Youth And Sports</option>
+                    <option value="14">Nuhu Bamali Polythecnic Zaria</option>
+                    <option value="20">Planning and Budget Commission</option>
+                    <option value="21">Secretary to the State Government</option>
+                    <option value="17">Shehu Idris College of Health Sciences and Technology, Makarfi</option>
+                    <option value="3">State Universal Basic Education</option>
+                  </select>
+
+                </div>
+
+              </div>
+              <div class="cell ">
+                <div class="blogpost-footer-author" style="width: 100%">
+                  <img class="avatar" src="../images/location.png" alt="LGA" / style="margin-right: 0.5rem">
+
+                  <select id='lga' name="lga" multiple>
+                    <option value='Kaduna North'>Kaduna North</option>
+                    <option value='Kachia'>Kachia</option>
+                    <option value='Kauru'>Kauru</option>
+                    <option value='Zaria'>Zaria</option>
+                    <option value='Makarfi'>Makarfi</option>
+                    <option value='Ikara'>Ikara</option>
+                    <option value='Giwa'>Giwa</option>
+                    <option value='Kaduna South'>Kaduna South</option>
+                    <option value='Igabi'>Igabi</option>
+                    <option value='Kaduna'>Kaduna</option>
+                    <option value='Birnin Gwari'>Birnin Gwari</option>
+                    <option value='Chikun'>Chikun</option>
+                    <option value='Kaduna South To Kaduna North '>Kaduna South To Kaduna North </option>
+                    <option value='Kaduna North To Igabi'>Kaduna North To Igabi</option>
+                    <option value=''></option>
+                    <option value='Jaba'>Jaba</option>
+                    <option value='Kajuru'>Kajuru</option>
+                    <option value='Kaura'>Kaura</option>
+                    <option value='Lere'>Lere</option>
+                    <option value='Multiple'>Multiple</option>
+                    <option value='Jema A'>Jema A</option>
+                    <option value='Jema' a '>Jema'a </option>
+                      <option value='Kagarko'>Kagarko</option>
+                      <option value='Sanga'>Sanga</option>
+                      <option value='Sabon Gari'>Sabon Gari</option>
+                      <option value='Kubau'>Kubau</option>
+                      <option value='Kudan'>Kudan</option>
+                      <option value='Soba'>Soba</option>
+                      <option value='Jama' a '>Jama'a</option>
+                        <option value='10 No. LGEAs'>10 No. LGEAs</option>
+                        <option value='Sari Gari'>Sari Gari</option>
+                        <option value='Zangon Kataf'>Zangon Kataf</option>
+                        <option value='6 No. LGEAs'>6 No. LGEAs</option>
+                        <option value='5 No. LGEAs'>5 No. LGEAs</option>
+                        <option value='7 No. LGEAs'>7 No. LGEAs</option>
+                        <option value='11 No. LGEAs'>11 No. LGEAs</option>
+                        <option value='23 No. LGEAs'>23 No. LGEAs</option>
+                        <option value='Jamia'>Jamia</option>
+                        <option value='Sabon Gaya'>Sabon Gaya</option>
+                        <option value='NULL'>NULL</option>
+                        <option value='Gidan-waya'>Gidan-waya</option>
+                        <option value='Kafanchan'>Kafanchan</option>
+                        <option value='Maraban Jos Kaduna'>Maraban Jos Kaduna</option>
+                        <option value='Zaria, Kaduna, Kafanchan'>Zaria, Kaduna, Kafanchan</option>
+                        <option value='Zone 1'>Zone 1</option>
+                        <option value='Zone 2'>Zone 2</option>
+                        <option value='Zone 3'>Zone 3</option>
+                        <option value='Markarfi'>Markarfi</option>
+                        <option value='Chikaji'>Chikaji</option>
+                        <option value='Lga'>Lga</option>
+                        <option value='Gari'>Gari</option>
+                        <option value='Karau'>Karau</option>
+                        <option value='Guza'>Guza</option>
+                        <option value='Sabon'>Sabon</option>
+                        <option value='Gwari'>Gwari</option>
+                        <option value='Kaduna State'>Kaduna State</option>
+                        <option value='Magani'>Magani</option>
+                        <option value='Kwoi'>Kwoi</option>
+                        <option value='Kagoro'>Kagoro</option>
+                  </select>
+
+
+
+
+                </div>
+
+
+              </div>
+              <div class="cell ">
+                  <div class="blogpost-footer-author" style="width: 100%">
+                      <img class="avatar" src="../images/calendar_year.png" alt="Year" / style="margin-right: 0.5rem">
+    
+                      <select id='year' name="year" multiple style="width:100%">
+                        <option value='2015'>2015</option>
+                        <option value='2016'>2016</option>
+                        <option value='2017'>2017</option>
+                        <option value='2018'>2018</option>
+                        
+                      </select>
+                    </div>
+    
+              </div>
             </div>
           </div>
+
+        </div>
+        <div class="cell">
+
+          <div>
+            <div class="grid-x grid-margin-x grid-margin-y small-up-1 medium-up-1 large-up-1" data-equalizer data-equalize-on="medium">
+              <div class="cell">
+                <!-- with icon font (fontawesome) -->
+                <div class="blogpost-footer-actions">
+                  Projects Summary
+                </div>
+
+          
+
+              </div>
+              <div class="cell">
+                <ul class="list-group">
+                  <li class="list-group-item active">Total Number of Projects</li>
+                  <li class="list-group-item">1500</li>
+                </ul>
+              </div>
+              <div class="cell">
+                <ul class="list-group">
+                  <li class="list-group-item active">Total Contract Amount</li>
+                  <li class="list-group-item">1500</li>
+                </ul>
+              </div>              <div class="cell">
+                <ul class="list-group">
+                  <li class="list-group-item active">Highest Contract Amount</li>
+                  <li class="list-group-item">1500</li>
+                </ul>
+              </div>              <div class="cell">
+                <ul class="list-group">
+                  <li class="list-group-item active">The Lowest Contract Amount</li>
+                  <li class="list-group-item">1500</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
     </div>
-  </div>
 
-  <div class="cell" style="background-color: transparent; padding: 1rem">
-    <h5 style="text-align: center">Projects </h5>
-    <div class="grid-x grid-margin-x">
-      <div class="cell small-12 medium-12 large-12">
-        <!-- <div class="callout" style="background-color: transparent; color: #ff3389">
-              Please note that you can select more than one filter parameter by ticking the checkbox or selecting an item from the dropdown search
-            </div> -->
-        <div class="" style="background-color: transparent; margin: 1rem">
-          <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fluid small-up-1 medium-up-3 large-up-4" data-equalize-on="medium">
-            <div class="cell">
-              <ul class="horizontal menu" data-accordion-menu style="width: 100%" data-equalizer-watch>
-                <li class="is-active" style="width: 100%">
-                  <a href="#0" data-toggle="note-cat" class="button" style="width: 100%">
-                    Filter By Category
-                  </a>
-                  <div class="dropdown-pane" id="note-cat" data-position="right" data-alignment="top" data-dropdown data-hover="true" data-hover-pane="true">
-                    You can select multiple categories for your filter by ticking the checkbox next to the Category or category
+
+
+
+
+
+
+   
+
+<div class="cell margin-top-bot">
+    <div class="container">
+
+        <ul class="tabsi">
+          <li class="tab-link current" data-tab="tab-1">Normal View</li>
+          <li class="tab-link" data-tab="tab-2">Table View</li>
+          <li class="tab-link" data-tab="tab-3">Visualization</li>
+          
+        </ul>
+     
+        <div id="tab-1" class="tab-content current">
+            <div class="margin-bottom hvr-grow">
+                <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-2 margin-top-bot">
+                    <div class="cell">
+                    </div>
+                    <div class="cell">
+                      <form>
+                        <div class="grid-x grid-padding-x">
+                          <div class="small-3 cell">
+                            <label for="middle-label" class="text-right middle">View Projects</label>
+                          </div>
+                          <div class="small-9 cell">
+                            <select class="scheme">
+                              <option value="10">1 - 10</option>
+                              <option value="50">1 - 50</option>
+                              <option value="100">1 - 100</option>
+                              <option value="all">All</option>
+                            </select>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
                   </div>
-                  <ul class="menu vertical nested">
-                    <li>
-                      <input id="checkbox12" type="checkbox">
-                      <label for="checkbox12">Goods</label>
-                    </li>
-                    <li>
-                      <input id="checkbox12" type="checkbox">
-                      <label for="checkbox12">Works</label>
-                    </li>
-                    <li>
-                      <input id="checkbox12" type="checkbox">
-                      <label for="checkbox12">Services</label>
-                    </li>
-                    <li>
-                      <input id="checkbox12" type="checkbox">
-                      <label for="checkbox12">Consultancy</label>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="cell">
-              <ul class="horizontal menu" data-accordion-menu style="width: 100%" data-equalizer-watch>
-                <li class="is-active" style="width: 100%">
-                  <a href="#0" data-toggle="note-year" class="button" style="width: 100%">
-                    Filter By Year
-                  </a>
-                  <div class="dropdown-pane" id="note-year" data-position="right" data-alignment="top" data-dropdown data-hover="true" data-hover-pane="true">
-                    You can select multiple years for your filter by ticking the checkbox next to the year or years
+                <section class="product-feature-section">
+                  <div class="product-feature-section-outer">
+                    <div class="product-feature-section-headline stat">Construction Of ECCDE Games Village 10 Schools</div>
+                    <h6 class="product-feature-section-headline">10 No. LGEAs, kaduna 2016</h6>
+          
+                    <div class="product-feature-section-inner">
+          
+                      <div class="product-feature-section-feature top-left">
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                        <div>
+                          <p class="feature-desc">State Universal Basic Education</p>
+                          <p class="feature-title">Office Address</p>
+                        </div>
+          
+                      </div>
+          
+                      <div class="product-feature-section-feature top-right">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <div>
+                          <p class="feature-desc">Date of Advert:
+                            <b>10/06/2016</b>
+                          </p>
+                          <p class="feature-title">Date of Award:
+                            <b>12/10/2017</b>
+                          </p>
+                        </div>
+                      </div>
+          
+                      <div class="product-feature-section-feature bottom-left">
+          
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <div>
+                          <p class="feature-desc">Contract Amount:
+                            <b>₦ 4,955,186.26</b>
+                          </p>
+                          <p class="feature-title">Contract Period:
+                            <b>08/03/2018 - 09/09/2018</b>
+                          </p>
+                        </div>
+                      </div>
+          
+                      <div class="product-feature-section-feature bottom-right">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <div>
+                          <p class="feature-desc">
+                            <a href="#" data-open="exampleModal1">Protech Gas Ltd</a>
+                          </p>
+                          <p class="feature-title">No 3 Wuse 2 street, Garki. Abuja</p>
+                          <p class="feature-title">09077889910</p>
+                        </div>
+                      </div>
+          
+                    </div>
+                    <div class="product-feature-section-inner">
+                      <a href="#">
+                        Click here to view complete project details
+                      </a>
+                    </div>
                   </div>
-                  <ul class="menu vertical nested">
-                    <li>
-                      <input id="checkbox12" type="checkbox">
-                      <label for="checkbox12">2015</label>
-                    </li>
-                    <li>
-                      <input id="checkbox12" type="checkbox">
-                      <label for="checkbox12">2016</label>
-                    </li>
-                    <li>
-                      <input id="checkbox12" type="checkbox">
-                      <label for="checkbox12">2017</label>
-                    </li>
-                    <li>
-                      <input id="checkbox12" type="checkbox">
-                      <label for="checkbox12">2018</label>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="cell">
-              <ul class="horizontal menu" data-accordion-menu style="width: 100%" data-equalizer-watch>
-                <li class="is-active" style="width: 100%">
-                  <a href="#0" data-toggle="note-mda" class="button" style="width: 100%">
-                    Filter By Ministiries, Departments and Agencies
-                  </a>
-                  <div class="dropdown-pane" id="note-mda" data-position="right" data-alignment="top" data-dropdown data-hover="true" data-hover-pane="true">
-                    You can select multiple MDAS by searching the title and selecting. You can also remove a selected item.
+                </section>
+          
+          
+          
+              </div>
+              <div class="margin-bottom hvr-grow">
+                <section class="product-feature-section">
+                  <div class="product-feature-section-outer">
+                    <div class="product-feature-section-headline stat">Construction Of ECCDE Games Village 10 Schools</div>
+                    <h6 class="product-feature-section-headline">10 No. LGEAs, kaduna 2016</h6>
+          
+                    <div class="product-feature-section-inner">
+          
+                      <div class="product-feature-section-feature top-left">
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                        <div>
+                          <p class="feature-desc">State Universal Basic Education</p>
+                          <p class="feature-title">Office Address</p>
+                        </div>
+          
+                      </div>
+          
+                      <div class="product-feature-section-feature top-right">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <div>
+                          <p class="feature-desc">Date of Advert:
+                            <b>10/06/2016</b>
+                          </p>
+                          <p class="feature-title">Date of Award:
+                            <b>12/10/2017</b>
+                          </p>
+                        </div>
+                      </div>
+          
+                      <div class="product-feature-section-feature bottom-left">
+          
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <div>
+                          <p class="feature-desc">Contract Amount:
+                            <b>₦ 4,955,186.26</b>
+                          </p>
+                          <p class="feature-title">Contract Period:
+                            <b>08/03/2018 - 09/09/2018</b>
+                          </p>
+                        </div>
+                      </div>
+          
+                      <div class="product-feature-section-feature bottom-right">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <div>
+                          <p class="feature-desc">
+                            <a href="#" data-open="exampleModal1">Protech Gas Ltd</a>
+                          </p>
+                          <p class="feature-title">No 3 Wuse 2 street, Garki. Abuja</p>
+                          <p class="feature-title">09077889910</p>
+                        </div>
+                      </div>
+          
+                    </div>
+                    <div class="product-feature-section-inner">
+                      <a href="#">
+                        Click here to view complete project details
+                      </a>
+                    </div>
                   </div>
-                  <ul class="menu vertical nested">
-                    <li>
-                      <input id="checkbox12" type="checkbox">
-                      <label for="checkbox12">Ministry of Health and Human Services</label>
-                    </li>
-                    <li>
-                      <input id="checkbox12" type="checkbox">
-                      <label for="checkbox12">Ministry of Works and Housing</label>
-                    </li>
-                    <li>
-                      <input id="checkbox12" type="checkbox">
-                      <label for="checkbox12">State Universal Basic Education Board</label>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="cell">
-              <ul class="horizontal menu" data-accordion-menu style="width: 100%" data-equalizer-watch>
-                <li class="is-active" style="width: 100%">
-                  <a href="#0" data-toggle="note-source" class="button" style="width: 100%">
-                    Filter By Budget Source
-                  </a>
-                  <div class="dropdown-pane" id="note-source" data-position="right" data-alignment="top" data-dropdown data-hover="true" data-hover-pane="true">
-                    You can select multiple categories for your filter by ticking the checkbox next to the Category or category
+                </section>
+          
+          
+          
+              </div>
+              <div class="margin-bottom hvr-grow">
+                <section class="product-feature-section">
+                  <div class="product-feature-section-outer">
+                    <div class="product-feature-section-headline stat">Construction Of ECCDE Games Village 10 Schools</div>
+                    <h6 class="product-feature-section-headline">10 No. LGEAs, kaduna 2016</h6>
+          
+                    <div class="product-feature-section-inner">
+          
+                      <div class="product-feature-section-feature top-left">
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                        <div>
+                          <p class="feature-desc">State Universal Basic Education</p>
+                          <p class="feature-title">Office Address</p>
+                        </div>
+          
+                      </div>
+          
+                      <div class="product-feature-section-feature top-right">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <div>
+                          <p class="feature-desc">Date of Advert:
+                            <b>10/06/2016</b>
+                          </p>
+                          <p class="feature-title">Date of Award:
+                            <b>12/10/2017</b>
+                          </p>
+                        </div>
+                      </div>
+          
+                      <div class="product-feature-section-feature bottom-left">
+          
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <div>
+                          <p class="feature-desc">Contract Amount:
+                            <b>₦ 4,955,186.26</b>
+                          </p>
+                          <p class="feature-title">Contract Period:
+                            <b>08/03/2018 - 09/09/2018</b>
+                          </p>
+                        </div>
+                      </div>
+          
+                      <div class="product-feature-section-feature bottom-right">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <div>
+                          <p class="feature-desc">
+                            <a href="#" data-open="exampleModal1">Protech Gas Ltd</a>
+                          </p>
+                          <p class="feature-title">No 3 Wuse 2 street, Garki. Abuja</p>
+                          <p class="feature-title">09077889910</p>
+                        </div>
+                      </div>
+          
+                    </div>
+                    <div class="product-feature-section-inner">
+                      <a href="#">
+                        Click here to view complete project details
+                      </a>
+                    </div>
                   </div>
-                  <ul class="menu vertical nested">
-                    <li>
-                      <input id="checkbox12" type="checkbox">
-                      <label for="checkbox12">Federal Government Intervention Funds</label>
-                    </li>
-                    <li>
-                      <input id="checkbox12" type="checkbox">
-                      <label for="checkbox12">State Budget</label>
-                    </li>
-
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
+                </section>
+          
+          
+          
+              </div>
         </div>
-        <div class="" style="background-color: transparent">
-          <div class="grid-x grid-margin-x">
-            <div class="cell small-12 medium-6 large-6">
-              <a href="#" data-open="dataset" class="button button-like" style="width:100%">
-
-                Download CSV
-              </a>
-            </div>
-            <div class="cell small-12 medium-6 large-6">
-              <a href="#" data-open="dataset" class="button button-like" style="width:100%">
-
-                Download JSON
-              </a>
-            </div>
-          </div>
+        <div id="tab-2" class="tab-content">
+           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
+        <div id="tab-3" class="tab-content">
+            <div class="cell">
+                <div class="grid-x grid-margin-x fluid small-up-1 medium-up-2 large-up-2" data-equalizer data-equalize-on="medium">
+                  <div class="cell">
+                    <label>Chart Type
+                      <select class="scheme">
+                        <option value="husker">Bar</option>
+                        <option value="starbuck">Column</option>
+                        <option value="hotdog">Area</option>
+                        <option value="apollo">Line</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="cell">
+                    <label>Chart Parameters
+                      <select class="scheme">
+                        <option value="husker">Year</option>
+                        <option value="starbuck">MDA</option>
+                        <option value="hotdog">LGA</option>
+                        <!-- <option value="apollo">Apollo</option> -->
+                      </select>
+                    </label>
+                  </div>
+          
+                </div>
+              </div>
 
-        <div class=" small reveal" id="dataset" data-reveal>
-
-
-          <div class="stat text-center">Do you want to download the complete dataset or your filter results?</div>
-          <button class="close-button" data-close aria-label="Close modal" type="button">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <hr>
-          <button class="button">Filter Results</button>
-          <button class="button pull-right">Entire Dataset</button>
+          
+          
         </div>
+    
+      
+      </div><!-- container -->
+</div>
 
-      </div>
-      <div class="cell small-12 medium-12 large-12">
-        <div class="table-scroll">
-          <table class="hover">
-            <thead class="pallette2">
-              <tr>
-                <th>Title</th>
-                <th>LGA</th>
 
-                <th>Budget Amount</th>
-                <th>Approval Year</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
 
-                <td>
-                  <a href="file:///C:/Users/ver%20Tingir/Projects/Kaduna%20State%20Open%20contracting/html/view-project.html">Medical Gas Piping to ICU at BDTH</a>
-                </td>
-                <td>Kaduna North
-                </td>
 
-                <td>&#8358; 1,466,513,182.80
-                </td>
-                <td>2017</td>
 
-              </tr>
-              <tr>
-                <td>Supply, Installation and Commissioning of Emergency Intervention Imaging Equipment for A & E at Doka Hospital
-                </td>
-                <td>Kachia</td>
-                <td>&#8358; 1,466,513,182.80
-                </td>
-                <td>2017</td>
-              </tr>
-              <tr>
-                <td>Supply of Emergency Intervention Surgical Instrument Sets for A & E at Doka Hospital
-                </td>
-                <td>Kachia</td>
-                <td>&#8358; 1,466,513,182.80
-                </td>
-                <td>2017</td>
-              </tr>
-              <tr>
-                <td>Supply, Installation and Commissioning of Emergency Intervention Hospital Equipment and Furniture for A &
-                  E at Doka Hospital
-                </td>
-                <td>Kachia</td>
-                <td>&#8358; 1,466,513,182.80
-                </td>
-                <td>2017</td>
-              </tr>
-              <tr>
-                <td>Supply, Installation and Commissioning of Emergency Intervention Hospital Equipment and Furniture for A &
-                  E at Doka Hospital
-                </td>
-                <td>Kachia</td>
+    <div class="contact-panel" id="contact-panel" data-toggler=".is-active">
+      <a class="contact-panel-button" data-toggle="contact-panel">
+        <i class="fa fa-download" aria-hidden="true"></i> Download Data</a>
 
-                <td>&#8358; 1,466,513,182.80
-                </td>
-                <td>2017</td>
-              </tr>
-              <tr>
-                <td>Supply of Emergency Intervention Patient Transport Equipment for A & E at Doka Hospital
-                </td>
-                <td>Kachia</td>
-                <td>&#8358; 1,466,513,182.80
-                </td>
-                <td>2017</td>
-              </tr>
-              <tr>
-                <td>Supply and Installation of Clinical Equipment at Doka Hospital
-                </td>
-                <td>Kachia</td>
-                <td>&#8358; 1,466,513,182.80
-                </td>
-                <td>2017</td>
-              </tr>
-              <tr>
-                <td>Supply, Installation and Commissioning of Laboratory Equipment at Doka Hospital
-                </td>
-                <td>Kachia</td>
-                <td>&#8358; 1,466,513,182.80
-                </td>
-                <td>2017</td>
-              </tr>
-              <tr>
-                <td>Supply, Installation and Commissioning of Operating Theatre Equipment at Doka Hospital
-                </td>
-                <td>Kachia</td>
-                <td>&#8358; 1,466,513,182.80
-                </td>
-                <td>2017</td>
-              </tr>
-            </tbody>
-          </table>
-          <div style="margin: 3% auto">
-            <ul class="pagination" role="navigation" aria-label="Pagination">
-              <li class="disabled">Previous
-                <span class="show-for-sr">page</span>
-              </li>
-              <li class="current">
-                <span class="show-for-sr">You're on page</span> 1</li>
-              <li>
-                <a href="#0" aria-label="Page 2">2</a>
-              </li>
-              <li>
-                <a href="#0" aria-label="Page 3">3</a>
-              </li>
-              <li>
-                <a href="#0" aria-label="Page 4">4</a>
-              </li>
-              <li class="ellipsis" aria-hidden="true"></li>
-              <li>
-                <a href="#0" aria-label="Page 12">12</a>
-              </li>
-              <li>
-                <a href="#0" aria-label="Page 13">13</a>
-              </li>
-              <li>
-                <a href="#0" aria-label="Next page">Next
-                  <span class="show-for-sr">page</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <button class="button" style="width: 100%">Download CSV</button>
+      <button class="button" style="width: 100%">Download JSON</button>
 
-      <div class="cell">
-        <div class="grid-x grid-margin-x fluid small-up-2 medium-up-2 large-up-2" data-equalizer data-equalize-on="medium">
-          <div class="cell">
-            <label>Chart Type
-              <select>
-                <option value="husker">Bar</option>
-                <option value="starbuck">Column</option>
-                <option value="hotdog">Area</option>
-                <option value="apollo">Line</option>
-              </select>
-            </label>
-          </div>
-          <div class="cell">
-            <label>Chart Parameters
-              <select>
-                <option value="husker">Year</option>
-                <option value="starbuck">MDA</option>
-                <option value="hotdog">LGA</option>
-                <!-- <option value="apollo">Apollo</option> -->
-              </select>
-            </label>
-          </div>
-
-        </div>
-      </div>
-      <div class="cell">
-        <img src="../images/chart.png" alt="" width="60%" />
-      </div>
-      <div>
-      </div>
     </div>
+
   </div>
   <footer class="marketing-site-footer">
     <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-2">
@@ -621,6 +700,32 @@
   <script src="../js/vendor/what-input.js"></script>
   <script src="../js/vendor/foundation.js"></script>
   <script src="../js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.js-example-basic-multiple').select2();
+    });
+  </script>
+  <script type="text/javascript">
+    $('#sector').select2({
+      placeholder: "Sector"
+    });
+  </script>
+  <script type="text/javascript">
+    $('#mda').select2({
+      placeholder: "Procuring Entity"
+    });
+  </script>
+  <script type="text/javascript">
+    $('#lga').select2({
+      placeholder: "LGA"
+    });
+  </script>
+<script type="text/javascript">
+  $('#year').select2({
+    placeholder: "Year"
+  });
+</script>
 </body>
 
 </html>
