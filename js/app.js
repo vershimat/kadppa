@@ -40,3 +40,4 @@ $('.categories-menu.menu.nested').each(function(){
     })
   
   })
+  
